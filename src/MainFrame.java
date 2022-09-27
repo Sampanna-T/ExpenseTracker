@@ -256,7 +256,7 @@ public class MainFrame extends JFrame implements ActionListener{
         return mainPanel;
     }
     
-    //returns addPanel
+    //returns costPanel
     private JPanel getCostPanel(){
         Border blackBorder = BorderFactory.createLineBorder(Color.black);
         Border emptyBorder = BorderFactory.createEmptyBorder();
@@ -304,7 +304,7 @@ public class MainFrame extends JFrame implements ActionListener{
         return mainPanel;
     }
 
-    //returns addPanel
+    //returns displayPanel
     private JPanel getDisplayPanel(){
         Border blackBorder = BorderFactory.createLineBorder(Color.black);
         Border emptyBorder = BorderFactory.createEmptyBorder();
@@ -367,11 +367,13 @@ public class MainFrame extends JFrame implements ActionListener{
         setVisible(true);
     }
 
+    //adding item to the data base
     private int insertQuery(String date, String item, String comment, double cost)throws SQLException{
         String query = String.format("INSERT INTO %s VALUES('%s','%s','%s',%f)",table,date,item,comment,cost);
         return statementObject.executeUpdate(query);
     }
 
+    //get String format of date supported by SQL
     private String getDate(String year, String month, String day){
         String date = year+"-"+month+"-"+day;
         return date;
@@ -448,6 +450,9 @@ public class MainFrame extends JFrame implements ActionListener{
         }
     }
 
+    /**
+     * Button press activity handled
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         
@@ -484,6 +489,9 @@ public class MainFrame extends JFrame implements ActionListener{
         }
     }
 
+    /**
+     * clean up activity
+     */
     @Override
     public void finalize()throws Exception{
        connectionObject.close();
