@@ -63,7 +63,7 @@ public class DisplayFrame extends JFrame{
         int col = getColCount();
         Object result[][] = new Object[getRowCount()][col];
         String resultQuery = String.format("SELECT * FROM %s"+
-        " WHERE %s BETWEEN '%s' and '%s'",table,getHeader(0),fromDate,toDate);
+        " WHERE %s BETWEEN '%s' and '%s' ORDER BY %s",table,getHeader(0),fromDate,toDate,getHeader(0));
         ResultSet resultSet = statementObject.executeQuery(resultQuery);
         
         int index = 0;

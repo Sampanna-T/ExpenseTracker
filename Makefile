@@ -5,10 +5,13 @@ dc = javadoc
 d = -d
 Main = Main
 rm = rm -rf
+del = rm -rf
 
 src = src/MainFrame.java\
 Main.java
 
+dotClassFile1 = *.class
+dotClassFile2 = src/*.class
 clsPath = "D:\MyInstalls\MySQLJar\mysql-connector-java-8.0.30\mysql-connector-java-8.0.30"
 clasPath2 = build
 docPath = doc
@@ -28,5 +31,6 @@ doc:
 	$(dc) $(d) $(docPath) $(docPackage) $(htmlVersion)	
 
 clean:
-	$(rm) $(clsPath2) $(docPath)
+	$(del) $(dotClassFile1)
+	$(del) $(dotClassFile2)
 

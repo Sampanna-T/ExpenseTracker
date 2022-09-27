@@ -92,6 +92,8 @@ public class MainFrame extends JFrame implements ActionListener{
     public MainFrame(String title, int width, int height){
         sqlConnect();
         initFrame(title, width, height);
+        display();
+        costUpdate();
     }
 
     //Establish connections with SQL DB
@@ -405,24 +407,27 @@ public class MainFrame extends JFrame implements ActionListener{
             int month = now.get(Calendar.MONTH)+1;
             int year = now.get(Calendar.YEAR);
             String date = getDate(Integer.toString(year),Integer.toString(month),Integer.toString(day));
+            String dateColName = getHeader(0);
             
             String dailyCostQuery = String.format("SELECT SUM(cost) FROM %s "+
-            "WHERE %s = '%s'",table,getHeader(0),date);
+            "WHERE %s = '%s'",table,dateColName,date);
             
             String monthlyCostQuery = String.format("SELECT SUM(cost) FROM %s "+
-            "WHERE MONTH(%s) = '%s'",table,getHeader(0),Integer.toString(month));
+            "WHERE MONTH(%s) = '%s' AND YEAR(%s) = '%s'",
+            table,dateColName,Integer.toString(month),dateColName,Integer.toString(year));
             
             String yearlyCostQuery = String.format("SELECT SUM(cost) FROM %s "+
-            "WHERE YEAR(%s) = '%s'",table,getHeader(0),Integer.toString(year));
+            "WHERE YEAR(%s) = '%s'",table,dateColName,Integer.toString(year));
             
             String dailyAvgCostQuery = String.format("SELECT AVG(cost) FROM %s "+
-            "WHERE %s = '%s'",table,getHeader(0),date);
+            "WHERE %s = '%s'",table,dateColName,date);
         
             String monthlyAvgCostQuery = String.format("SELECT AVG(cost) FROM %s "+
-            "WHERE MONTH(%s) = '%s'",table,getHeader(0),Integer.toString(month));
-            
+            "WHERE MONTH(%s) = '%s' AND YEAR(%s) = '%s'",
+            table,dateColName,Integer.toString(month),dateColName,Integer.toString(year));
+
             String yearlyAvgCostQuery = String.format("SELECT AVG(cost) FROM %s "+
-            "WHERE YEAR(%s) = '%s'",table,getHeader(0),Integer.toString(year));
+            "WHERE YEAR(%s) = '%s'",table,dateColName,Integer.toString(year));
             
             ResultSet rs = statementObject.executeQuery(dailyCostQuery);rs.next();
             dayCostInput.setText(rs.getString(1));
@@ -479,6 +484,10 @@ public class MainFrame extends JFrame implements ActionListener{
         }
     }
 
-
+    @Override
+    public void finalize()throws Exception{
+       connectionObject.close();
+       statementObject.close(); 
+    }
 
 }
