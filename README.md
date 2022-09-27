@@ -7,7 +7,7 @@ features-
 3) Section to Display cost => Shows the cost details like current day's expense, monthly expense, yearly expense along with the average values.
 
 
-![GUI](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/GUI.png)
+![GUI](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/GUI.png)
 
 ## HOW TO USE EXPENSE TRACKER APPLICATION
 
@@ -18,9 +18,9 @@ features-
 (c) Press ok.
 (d) Now your item information is stored in the database successfully.
 
-![ADD ITEM](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/ADD_ITEM.png)
+![ADD ITEM](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/ADD_ITEM.png)
 
-![ADD ITEM POPUP](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/ADD_ITEM_POPUP.png)
+![ADD ITEM POPUP](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/ADD_ITEM_POPUP.png)
 
 ## 2) DISPLAY SECTION
 
@@ -29,19 +29,19 @@ features-
 (c) All the item information starting from {from date} to {to date} will be visible.
 (d) The displayed item can also be edited and deleted.
 
-![ENTER FROM TO DATE](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/ENTER_FROM_TO_DATE.png)
+![ENTER FROM TO DATE](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/ENTER_FROM_TO_DATE.png)
 
-![DISPLAY EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/DISPLAY_EXPENSE_SUMMARY.png)
+![DISPLAY EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/DISPLAY_EXPENSE_SUMMARY.png)
 
-![EDIT EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/EDIT_EXPENSE_SUMMARY.png)
+![EDIT EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/EDIT_EXPENSE_SUMMARY.png)
 
-![DELETE EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/DELETE_EXPENSE_SUMMARY.png)
+![DELETE EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/DELETE_EXPENSE_SUMMARY.png)
 
 ## 3) DISPLAY COST SECTION
 
 (a) This section contains information like cost today, monthly cost, yearly cost along with average cost as well.
 
-![COST INFO](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/COST_INFO.png)
+![COST INFO](https://github.com/Sampanna-T/ExpenseTracker/blob/master/Images/COST_INFO.png)
 
 
 ### FUTURE ENHANCEMENT
