@@ -7,7 +7,7 @@ features-
 3) Section to Display cost => Shows the cost details like current day's expense, monthly expense, yearly expense along with the average values.
 
 
-![GUI]()
+![GUI](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/GUI.png)
 
 ## HOW TO USE EXPENSE TRACKER APPLICATION
 
@@ -18,9 +18,9 @@ features-
 (c) Press ok.
 (d) Now your item information is stored in the database successfully.
 
-![ADD ITEM]()
+![ADD ITEM](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/ADD_ITEM.png)
 
-![ADD ITEM POPUP]()
+![ADD ITEM POPUP](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/ADD_ITEM_POPUP.png)
 
 ## 2) DISPLAY SECTION
 
@@ -29,19 +29,19 @@ features-
 (c) All the item information starting from {from date} to {to date} will be visible.
 (d) The displayed item can also be edited and deleted.
 
-![ENTER FROM TO DATE]()
+![ENTER FROM TO DATE](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/ENTER_FROM_TO_DATE.png)
 
-![DISPLAY EXPENSE SUMMARY]()
+![DISPLAY EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/DISPLAY_EXPENSE_SUMMARY.png)
 
-![EDIT EXPENSE SUMMARY]()
+![EDIT EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/EDIT_EXPENSE_SUMMARY.png)
 
-![DELETE EXPENSE SUMMARY]()
+![DELETE EXPENSE SUMMARY](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/DELETE_EXPENSE_SUMMARY.png)
 
 ## 3) DISPLAY COST SECTION
 
 (a) This section contains information like cost today, monthly cost, yearly cost along with average cost as well.
 
-![COST INFO]()
+![COST INFO](https://github.com/Sampanna-T/ExpenseTracker/tree/master/Images/COST_INFO.png)
 
 
 ### FUTURE ENHANCEMENT
